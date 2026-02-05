@@ -2,6 +2,8 @@ package Activity3_ATM;
 
 public class Methods {
 
+    public static double initialBalance = Main.initialBalance;
+
     static void depositLogic(double depositAmount) {
         if (depositAmount > 0) {
             initialBalance += depositAmount;
