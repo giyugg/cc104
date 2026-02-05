@@ -34,6 +34,11 @@ public class Main {
                     double depositAmount = input.nextDouble();
                     config.depositLogic(depositAmount);
                     break;
+                case 2:
+                    System.out.print("Enter the amount to withdraw: ");
+                    double withdrawAmount = input.nextDouble();
+                    config.withdrawLogic(withdrawAmount);
+                    break;
                 case 5:
                     config.exitLogic();
             }
