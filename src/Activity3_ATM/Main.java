@@ -26,7 +26,7 @@ public class Main {
             System.out.println("[5] - Exit");
 
             System.out.println("Enter your choice");
-            String choice = input.nextLine();
+            int choice = input.nextInt();
 
             switch (choice) {
                 case 5:
