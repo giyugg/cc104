@@ -25,6 +25,12 @@ public class Methods {
         }
     }
 
+    // Feature request: Add a condition if the user wants to go back to main menu.
+    // If no, program will end. If yes, call main menu.
+    void checkBalance(double initialBalance) {
+        System.out.println("Your account has a balance of PHP " + initialBalance);
+    }
+
     static void exitLogic() {
         System.out.println("Thank you for banking with us! Goodbye.");
         System.exit(0);
