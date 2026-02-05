@@ -25,7 +25,7 @@ public class Main {
             System.out.println("[4] - Display Menu");
             System.out.println("[5] - Exit");
 
-            System.out.println("Enter your choice");
+            System.out.print("Enter your choice: ");
             int choice = input.nextInt();
 
             switch (choice) {
