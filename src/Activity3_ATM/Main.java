@@ -15,7 +15,7 @@ public class Main {
     static Methods config =  new Methods();
 
     static void main() {
-        while (true) {
+        do {
             System.out.println("----------------------");
             System.out.println("ATM Machine Simulation");
             System.out.println("----------------------");
