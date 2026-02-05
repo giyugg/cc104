@@ -15,6 +15,20 @@ public class Main {
     static Methods config =  new Methods();
 
     static void main() {
+        while (true) {
+            System.out.println("----------------------");
+            System.out.println("ATM Machine Simulation");
+            System.out.println("----------------------");
+            System.out.println("[1] - Deposit");
+            System.out.println("[2] - Withdraw");
+            System.out.println("[3] - Balance Inquiry");
+            System.out.println("[4] - Display Menu");
+            System.out.println("[5] - Exit");
 
+            System.out.println("Enter your choice");
+            String choice = input.nextLine();
+
+            
+        }
     }
 }
