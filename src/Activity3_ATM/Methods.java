@@ -1,5 +1,4 @@
 package Activity3_ATM;
-
 import java.util.Scanner;
 
 public class Methods {
@@ -15,7 +14,7 @@ public class Methods {
             System.out.println("Your deposit amount must not be negative or zero.");
         }
     }
-    
+
     static void withdrawLogic(double withdrawAmount) {
         if (withdrawAmount % 100 == 0 && withdrawAmount > 0) {
             if (initialBalance - withdrawAmount >= 2000) {
