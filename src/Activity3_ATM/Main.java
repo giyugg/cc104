@@ -32,7 +32,7 @@ public class Main {
                 case 1:
                     System.out.print("Enter the amount to deposit: ");
                     double depositAmount = input.nextDouble();
-                    Methods.depositLogic(depositAmount);
+                    config.depositLogic(depositAmount);
                     break;
                 case 5:
                     config.exitLogic();
