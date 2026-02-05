@@ -20,6 +20,7 @@ public class Methods {
             if (initialBalance - withdrawAmount >= 2000) {
                 initialBalance -= withdrawAmount;
                 System.out.println("You have successfully withdrew " + withdrawAmount);
+                System.out.println("Your updated balance is PHP " + initialBalance);
             } else {
                 System.out.println("Your account balance is below the minimum balance required. Consider depositing first.");
             }
