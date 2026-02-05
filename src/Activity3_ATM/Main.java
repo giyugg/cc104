@@ -30,8 +30,7 @@ public class Main {
 
             switch (choice) {
                 case 5:
-                    System.out.println("Thank you for banking with us! Goodbye.");
-                    System.exit(0);
+                    config.exitLogic();
             }
         }
     }
