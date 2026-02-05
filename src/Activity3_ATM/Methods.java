@@ -1,5 +1,7 @@
 package Activity3_ATM;
 
+import java.util.Scanner;
+
 public class Methods {
 
     public static double initialBalance = Main.initialBalance;
