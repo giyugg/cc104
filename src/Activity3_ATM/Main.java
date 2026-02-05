@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class Main {
     static double initialBalance = 2000;
     static Scanner input = new Scanner(System.in);
+    static Methods config =  new Methods();
 
     static void main() {
 
