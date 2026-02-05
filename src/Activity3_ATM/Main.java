@@ -29,6 +29,11 @@ public class Main {
             int choice = input.nextInt();
 
             switch (choice) {
+                case 1:
+                    System.out.print("Enter the amount to deposit: ");
+                    double depositAmount = input.nextDouble();
+                    Methods.depositLogic(depositAmount);
+                    break;
                 case 5:
                     config.exitLogic();
             }
