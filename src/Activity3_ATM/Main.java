@@ -28,7 +28,11 @@ public class Main {
             System.out.println("Enter your choice");
             String choice = input.nextLine();
 
-            
+            switch (choice) {
+                case 5:
+                    System.out.println("Thank you for banking with us! Goodbye.");
+                    System.exit(0);
+            }
         }
     }
 }
