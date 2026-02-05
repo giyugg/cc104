@@ -39,6 +39,11 @@ public class Main {
                     double withdrawAmount = input.nextDouble();
                     config.withdrawLogic(withdrawAmount);
                     break;
+                case 3:
+                    config.checkBalance(initialBalance);
+                    break;
+                case 4:
+                    break;
                 case 5:
                     config.exitLogic();
             }
