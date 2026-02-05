@@ -1,4 +1,5 @@
-/* Objective on this activity:
+/* Author: Acuña, Kyle A. | BSIS 1BG2
+Objective on this activity:
 Write an OOP program that simulates an ATM Transactions including method for
 `DEPOSIT, WITHDRAW, BALANCE INQUIRY, AND EXIT`. Users can deposit any amount
 but withdrawals can be only be made in denominations of 1000, 500, 200, or 100.
