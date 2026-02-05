@@ -47,6 +47,6 @@ public class Main {
                 case 5:
                     config.exitLogic();
             }
-        }
+        } while (true);
     }
 }
