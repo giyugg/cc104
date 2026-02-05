@@ -11,9 +11,7 @@ public class Methods {
             System.out.println("Your deposit amount must not be negative or zero.");
         }
     }
-
-    // Note: Withdrawable amount must not reach below 2000 of the balance.
-    // Note2: Withdrawals can be only be made in denominations of 1000, 500, 200, or 100.
+    
     static void withdrawLogic(double withdrawAmount) {
         if (withdrawAmount % 100 == 0 && withdrawAmount > 0) {
             if (initialBalance - withdrawAmount >= 2000) {
