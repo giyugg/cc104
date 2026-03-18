@@ -6,7 +6,7 @@ public class InputDisplayMatrixPractice {
         Scanner value = new Scanner(System.in);
         int[][] matrix = new int[2][3];
 
-        System.out.println("Enter numbers: ");
+        System.out.print("Enter numbers: ");
         for (int row = 0; row < matrix.length; row++) {
             for (int column = 0; column < matrix[row].length; column++) {
                 matrix[row][column] = value.nextInt();
