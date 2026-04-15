@@ -116,6 +116,6 @@ public class FinalsDayOrMyFinals {
                 omitSpecialCharacters = omitSpecialCharacters + c;
             }
         }
-        System.out.println("Result: " + omitSpecialCharacters);
+        System.out.println("Result: " + omitSpecialCharacters.trim());
     }
 }
