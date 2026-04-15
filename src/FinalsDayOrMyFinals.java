@@ -21,6 +21,9 @@ public class FinalsDayOrMyFinals {
                 case 2:
                     removeLetters(sentence);
                     break;
+                case 18:
+                    terminateProgram();
+                    break;
             }
         }
 
@@ -48,6 +51,7 @@ public class FinalsDayOrMyFinals {
         System.out.println("15. Replace Substring");
         System.out.println("16. Find Longest Word");
         System.out.println("17. Find Shortest Word");
+        System.out.println("18. EXIT PROGRAM");
     }
 
     public static int getIntegerInput() {
@@ -58,6 +62,11 @@ public class FinalsDayOrMyFinals {
         int var = input.nextInt();
         input.nextLine();
         return var;
+    }
+
+    public static void terminateProgram () {
+        System.out.println("Program terminated.");
+        System.exit(0);
     }
 
     public static void reverseString(String sentence) {
