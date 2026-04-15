@@ -18,6 +18,9 @@ public class FinalsDayOrMyFinals {
                 case 1:
                     reverseString(sentence);
                     break;
+                case 2:
+                    removeLetters(sentence);
+                    break;
             }
         }
 
@@ -58,7 +61,7 @@ public class FinalsDayOrMyFinals {
     }
 
     public static void reverseString(String sentence) {
-        System.out.println("=====================");
+        System.out.println("=================================");
         System.out.println("Status: It's working!");
 
         String reversal = "";
@@ -67,5 +70,20 @@ public class FinalsDayOrMyFinals {
         }
 
         System.out.println("Reversed string: " + reversal);
+    }
+
+    public static void removeLetters(String sentence) {
+        System.out.println("=================================");
+        System.out.println("Status: Debug Mode :DD");
+
+        String removeLettersResult = "";
+        for (int i = 0; i < sentence.length(); i++) {
+            char letters = sentence.charAt(i);
+
+            if (!Character.isLetter(letters)) {
+                removeLettersResult = removeLettersResult + letters;
+            }
+        }
+        System.out.println("Without letters: " + removeLettersResult.trim());
     }
 }
