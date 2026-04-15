@@ -74,7 +74,7 @@ public class FinalsDayOrMyFinals {
 
     public static void removeLetters(String sentence) {
         System.out.println("=================================");
-        System.out.println("Status: Debug Mode :DD");
+        System.out.println("Status: It's working!");
 
         String removeLettersResult = "";
         for (int i = 0; i < sentence.length(); i++) {
