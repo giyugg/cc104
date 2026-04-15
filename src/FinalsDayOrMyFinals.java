@@ -21,6 +21,9 @@ public class FinalsDayOrMyFinals {
                 case 2:
                     removeLetters(sentence);
                     break;
+                case 3:
+                    removeSpecialCharacters(sentence);
+                    break;
                 case 18:
                     terminateProgram();
                     break;
@@ -94,5 +97,25 @@ public class FinalsDayOrMyFinals {
             }
         }
         System.out.println("Without letters: " + removeLettersResult.trim());
+    }
+
+    public static void removeSpecialCharacters (String sentence) {
+        System.out.println("=================================");
+        System.out.println("Status: Debug mode!!");
+
+        String omitSpecialCharacters = "";
+        for (int i = 0; i < sentence.length(); i++) {
+            char c = sentence.charAt(i);
+
+            // keep letters, digits, and spaces
+            if ((c >= 'a' && c <= 'z') ||
+                    (c >= 'A' && c <= 'Z') ||
+                    (c >= '0' && c <= '9') ||
+                    (c == ' ')) {
+
+                omitSpecialCharacters = omitSpecialCharacters + c;
+            }
+        }
+        System.out.println("Result: " + omitSpecialCharacters);
     }
 }
