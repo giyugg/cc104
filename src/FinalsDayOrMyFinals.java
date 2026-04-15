@@ -69,7 +69,7 @@ public class FinalsDayOrMyFinals {
             reversal = reversal + sentence.charAt(i);
         }
 
-        System.out.println("Reversed string: " + reversal);
+        System.out.println("Reversed string: " + reversal.trim());
     }
 
     public static void removeLetters(String sentence) {
