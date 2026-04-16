@@ -155,5 +155,3 @@ public class FinalsDayOrMyFinals {
         System.out.println("Normalized spacing: " + normalized);
     }
 }
-
-}
