@@ -30,6 +30,9 @@ public class FinalsDayOrMyFinals {
                 case 5:
                     normalizeSpace(sentence);
                     break;
+                case 6:
+                    extractWords(sentence);
+                    break;
                 case 18:
                     terminateProgram();
                     break;
