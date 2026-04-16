@@ -24,6 +24,12 @@ public class FinalsDayOrMyFinals {
                 case 3:
                     removeSpecialCharacters(sentence);
                     break;
+                case 4:
+                    removeNumbers(sentence);
+                    break;
+                case 5:
+                    normalizeSpace(sentence);
+                    break;
                 case 18:
                     terminateProgram();
                     break;
@@ -116,6 +122,35 @@ public class FinalsDayOrMyFinals {
                 omitSpecialCharacters = omitSpecialCharacters + c;
             }
         }
-        System.out.println("Result: " + omitSpecialCharacters);
+        System.out.println("Result: " + omitSpecialCharacters.trim());
+
+        System.out.println("=================================");
+        String removedSpaces = sentence.replaceAll("[^a-zA-Z0-9 ]", "");
+        System.out.println("Thristan's Output: " + removedSpaces);
     }
+
+    public static void removeNumbers(String sentence) {
+        System.out.println("=================================");
+        System.out.println("Status: Debug mode!!");
+
+        String omitNumbers = "";
+        for (int i = 0; i < sentence.length(); i++) {
+            char c = sentence.charAt(i);
+
+            if ((c >= '0' && c <= '9')) {
+                omitNumbers = omitNumbers + c;
+            }
+        }
+        System.out.println("Result: " + omitNumbers.trim());
+    }
+
+    public static void normalizeSpace(String sentence){
+        System.out.println("=================================");
+        System.out.println("Status: It's working!");
+
+        String normalized = sentence.trim().replaceAll("\\s+", " ");
+        System.out.println("Normalized spacing: " + normalized);
+    }
+    }
+
 }
