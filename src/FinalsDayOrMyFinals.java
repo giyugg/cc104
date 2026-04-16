@@ -134,7 +134,7 @@ public class FinalsDayOrMyFinals {
 
     public static void removeNumbers(String sentence) {
         System.out.println("=================================");
-        System.out.println("Status: Debug mode!!");
+        System.out.println("Status: It's working!");
 
         String omitNumbers = "";
         for (int i = 0; i < sentence.length(); i++) {
@@ -153,5 +153,15 @@ public class FinalsDayOrMyFinals {
 
         String normalized = sentence.trim().replaceAll("\\s+", " ");
         System.out.println("Normalized spacing: " + normalized);
+    }
+
+    public static void extractWords(String sentence) {
+        System.out.println("=================================");
+        System.out.println("Status: Debug mode.");
+
+        String []wordsArray = sentence.split(" ");
+        for (String word : wordsArray) {
+            System.out.println(word.trim());
+        }
     }
 }
